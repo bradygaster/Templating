@@ -159,10 +159,7 @@ namespace Company.WebApplication1
 
             app.UseEndpointRouting(routes =>
             {
-                routes.MapMvcControllers();
-                routes.MapRazorPages();
-
-                //routes.MapApplication();
+                routes.MapApplication();
             });
 
             app.UseCookiePolicy();

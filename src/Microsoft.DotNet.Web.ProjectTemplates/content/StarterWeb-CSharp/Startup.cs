@@ -158,16 +158,10 @@ namespace Company.WebApplication1
 
             app.UseEndpointRouting(routes =>
             {
-                routes.MapMvcControllers();
-                routes.MapRazorPages();
-                routes.MapMvcRoute(
+                routes.MapApplication();
+                routes.MapControllerRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
-
-                //routes.MapApplication();
-                //routes.MapControllerRoute(
-                //    name: "default",
-                //    template: "{controller=Home}/{action=Index}/{id?}");
             });
 
             app.UseCookiePolicy();

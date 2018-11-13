@@ -65,10 +65,7 @@ namespace Company.WebApplication1
 
             app.UseEndpointRouting(routes =>
             {
-                routes.MapMvcControllers();
-                routes.MapRazorPages();
-
-                //routes.MapApplication();
+                routes.MapApplication();
             });
 
 #if (OrganizationalAuth || IndividualAuth)
